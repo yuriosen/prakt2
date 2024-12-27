@@ -23,7 +23,7 @@ public class Rectangle {
     public Rectangle(double heigth, double width) {
         if (width < 0) {
             throw new RuntimeException("Отрицательной ширины нет. Вы ввели: " + width);
-        } else if (height < 0) {
+        } else if (heigth < 0) {
             throw new RuntimeException("Отрицательной высоты нет. Вы ввели: " + height);
         }
         this.heigth = heigth;
@@ -71,12 +71,12 @@ public class Main {
         Circle circle1 = new Circle(3);
 
         System.out.println(circle1.perimeter());
-        System.out.println(circle1.aria());
+        System.out.println(circle1.area());
 
         System.out.println(rectangle1.perimeter());
         System.out.println(rectangle1.area());
 
         System.out.println(triangle1.perimeter());
-        System.out.println(triangle1.aria());
+        System.out.println(triangle1.area());
     }
 }
